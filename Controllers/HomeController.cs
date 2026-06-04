@@ -12,6 +12,12 @@ namespace PAW_Practica1.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Login(string email, string password)
+        {
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Register()
         {
             return View();
